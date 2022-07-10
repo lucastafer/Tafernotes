@@ -10,7 +10,6 @@
     ]
   },
   "devDependencies": {
-    "@tafernotes/eslint-config": "*",
-    "typescript": "^3.9.7"
+    "@tafernotes/eslint-config": "*"
   }
 }

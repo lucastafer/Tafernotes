@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 let noteSchema = new mongoose.Schema({
   title: String,
@@ -10,8 +10,8 @@ let noteSchema = new mongoose.Schema({
     ref: 'User',
     required: true
   }
-});
+})
 
-noteSchema.index({'title': 'text', 'body': 'text'});
+noteSchema.index({ title: 'text', body: 'text' })
 
-module.exports = mongoose.model('Note', noteSchema);
+module.exports = mongoose.model('Note', noteSchema)

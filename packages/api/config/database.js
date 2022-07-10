@@ -1,13 +1,13 @@
-const mongoose = require("mongoose");
-mongoose.Promise = global.Promise;
+const mongoose = require('mongoose')
+mongoose.Promise = global.Promise
 
-require('dotenv').config();
-const MONGO_URL = process.env.MONGO_URL;
+require('dotenv').config()
+const MONGO_URL = process.env.MONGO_URL
 mongoose
   .connect(MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
+    useCreateIndex: true
   })
-  .then(() => console.log("MongoDB connected succesfull."))
-  .catch((err) => console.log(err));
+  .then(() => console.log('MongoDB connected succesfull.'))
+  .catch(err => console.log(err))
