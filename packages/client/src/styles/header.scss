@@ -1,0 +1,39 @@
+@import "./custom_colors";
+
+nav.navbar {
+  height: 70px;
+  border-bottom: 1px solid black;
+  background-color: black;
+  
+  .navbar-brand {  
+    img {
+      height: 55px;
+      margin-top:5px;
+    }
+  }
+}
+
+.navbar-logged{
+  .navbar-menu{
+    background-color: black;
+  }
+}
+
+.a{
+  color: black;
+}
+
+.navbar-burger{
+  color: white;
+}
+
+.navbar-menu.is-active{
+  margin: -21px;
+  background-color: black;
+
+}
+
+.navbar-menu.is-active .button{
+  margin: 20px;
+  margin-bottom: -10px;
+}
